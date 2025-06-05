@@ -24,6 +24,19 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      '@typescript-eslint/explicit-function-return-type': 'error',
+      '@typescript-eslint/explicit-module-boundary-types': 'error',
+      '@typescript-eslint/typedef': [
+        'error',
+        {
+          arrowParameter: true,
+          variableDeclaration: true,
+          propertyDeclaration: true,
+          memberVariableDeclaration: true,
+          parameter: true,
+        },
+      ],
+      '@typescript-eslint/no-explicit-any': 'warn',
     },
   },
   eslintConfigPrettier
