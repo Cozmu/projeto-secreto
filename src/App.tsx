@@ -4,7 +4,7 @@ import Home from './pages/Home';
 
 function App(): ReactElement {
   return (
-    <main>
+    <main className='min-h-screen w-full'>
       <Routes>
         <Route path='/' Component={Home} />
       </Routes>
