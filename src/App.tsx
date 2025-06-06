@@ -1,12 +1,12 @@
 import { type ReactElement } from "react";
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App(): ReactElement {
   return (
     <main>
       <Routes>
-        <Route path="/" Component={} />
+        <Route path="/" Component={Home} />
       </Routes>
     </main>
   );
