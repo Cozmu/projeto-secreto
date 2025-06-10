@@ -4,7 +4,7 @@ import Home from './pages/Home';
 
 function App(): ReactElement {
   return (
-    <main className='font-allura min-h-screen w-full'>
+    <main className='font-allura bg-whiteKuromin min-h-screen w-full'>
       <Routes>
         <Route path='/' Component={Home} />
       </Routes>
