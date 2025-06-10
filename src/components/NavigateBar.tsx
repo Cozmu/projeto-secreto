@@ -1,6 +1,7 @@
 import { useState, type ReactElement } from 'react';
 import { NavLink } from 'react-router-dom';
 import kuromiFace from '../../imgs/kuomiFace2.png';
+import ampulheta from '../../imgs/ampulheta.png';
 
 function NavigateBar(): ReactElement {
   const [isDrop, setIsDrop] = useState<boolean>(false);
@@ -14,7 +15,7 @@ function NavigateBar(): ReactElement {
   return (
     <div>
       <section className='h-24 w-24'>
-        <button className='cursor-pointer shadow' onClick={toggleDrop}>
+        <button className='cursor-pointer' onClick={toggleDrop}>
           <img
             className={`h-24 w-24 transition-transform duration-800 ease-in-out ${rotated ? 'rotate-360' : 'rotate-0'}`}
             src={kuromiFace}
@@ -22,18 +23,27 @@ function NavigateBar(): ReactElement {
           />
         </button>
       </section>
-      <nav className='absolute'>
+      <nav className='absolute mt-4'>
         <ul
-          className={`font-patrickHand ${isDrop ? 'flex' : 'hidden'} flex-col justify-start gap-7 text-center`}
+          className={`flex flex-col gap-4 text-center text-lg transition-all duration-500 ${
+            isDrop ? 'translate-y-0 opacity-100' : 'pointer-events-none -translate-y-2 opacity-0'
+          }`}
         >
-          <li>
-            <NavLink to='{}'>Tempo com voce</NavLink>
+          <li className='group translate-0 cursor-pointer rounded-tl-lg opacity-100 transition-all duration-500 ease-in hover:scale-105'>
+            <NavLink className='flex' to='{}'>
+              <p></p>Tempo com você
+              <img
+                src={ampulheta}
+                alt=''
+                className='w-10 transition-transform duration-1200 ease-in-out group-hover:rotate-360'
+              />
+            </NavLink>
           </li>
-          <li>
-            <NavLink to='{}'>galeria</NavLink>
+          <li className='translate-0 rounded-tl-lg opacity-100 transition-all delay-500 duration-500 ease-in'>
+            <NavLink to='{}'>Fotinhaas</NavLink>
           </li>
-          <li>
-            <NavLink to='{}'>proposta</NavLink>
+          <li className='translate-0 opacity-100 transition-all delay-800 duration-500 ease-in'>
+            <NavLink to='{}'>Proposta imperdivel</NavLink>
           </li>
         </ul>
       </nav>
