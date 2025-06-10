@@ -2,15 +2,17 @@
 
 
 @keyframes shake {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-10px);
-  }
-  75% {
-    transform: translateX(10px);
-  }
+  0%, 100% { transform: rotate(12deg); } 
+  25% { transform: rotate(15deg); }
+  75% { transform: rotate(9deg); }
+}
+
+.camera-icon {
+  transition: all 0.3s ease;
+}
+
+.camera-container:hover .camera-icon {
+  animation: shake 1.0s ease-in-out infinite;
 }
 
 @theme {

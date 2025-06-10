@@ -41,13 +41,13 @@ function NavigateBar(): ReactElement {
               />
             </NavLink>
           </li>
-          <li className='group translate-0 transition-all duration-500 ease-in hover:scale-105'>
+          <li className='camera-container group translate-0 transition-all duration-500 ease-in hover:scale-105'>
             <NavLink className='flex items-center gap-2' to='{}'>
               <p>Fotinhaas</p>
               <img
                 src={camera}
                 alt=''
-                className='group-hover:animate-shake mb-1 w-10 rotate-10 transition-transform'
+                className='camera-icon mb-1 w-10 rotate-12 transition-transform'
               />
             </NavLink>
           </li>
