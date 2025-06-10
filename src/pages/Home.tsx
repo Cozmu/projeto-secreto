@@ -1,10 +1,12 @@
 import { type ReactElement } from 'react';
+import Header from '../components/Header';
 
 function Home(): ReactElement {
   return (
     <>
-      <div className='flex flex-col'>𓂃˖˳·˖ ִֶָ ⋆🌷͙⋆ ִֶָ˖·˳˖𓂃 ִֶָ</div>
-      <p className='font-allura'>oi eu quero lorem</p>
+      <Header />
+      <div className='flex flex-col'></div>
+      {/* <p className='font-allura'>oi eu quero lorem</p> */}
     </>
   );
 }
