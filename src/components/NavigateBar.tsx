@@ -2,6 +2,8 @@ import { useState, type ReactElement } from 'react';
 import { NavLink } from 'react-router-dom';
 import kuromiFace from '../../imgs/kuomiFace2.png';
 import ampulheta from '../../imgs/ampulheta.png';
+import camera from '../../imgs/camera.png';
+import star from '../../imgs/star.png';
 
 function NavigateBar(): ReactElement {
   const [isDrop, setIsDrop] = useState<boolean>(false);
@@ -29,7 +31,7 @@ function NavigateBar(): ReactElement {
             isDrop ? 'translate-y-0 opacity-100' : 'pointer-events-none -translate-y-2 opacity-0'
           }`}
         >
-          <li className='group translate-0 cursor-pointer rounded-tl-lg opacity-100 transition-all duration-500 ease-in hover:scale-105'>
+          <li className='group translate-0 cursor-pointer transition-all duration-500 ease-in hover:scale-105'>
             <NavLink className='flex' to='{}'>
               <p></p>Tempo com você
               <img
@@ -39,11 +41,25 @@ function NavigateBar(): ReactElement {
               />
             </NavLink>
           </li>
-          <li className='translate-0 rounded-tl-lg opacity-100 transition-all delay-500 duration-500 ease-in'>
-            <NavLink to='{}'>Fotinhaas</NavLink>
+          <li className='group translate-0 transition-all duration-500 ease-in hover:scale-105'>
+            <NavLink className='flex items-center gap-2' to='{}'>
+              <p>Fotinhaas</p>
+              <img
+                src={camera}
+                alt=''
+                className='group-hover:animate-shake mb-1 w-10 rotate-10 transition-transform'
+              />
+            </NavLink>
           </li>
-          <li className='translate-0 opacity-100 transition-all delay-800 duration-500 ease-in'>
-            <NavLink to='{}'>Proposta imperdivel</NavLink>
+          <li className='group translate-0 transition-all duration-500 ease-in hover:scale-105'>
+            <NavLink className='flex items-center' to='{}'>
+              <p>Proposta imperdivel</p>
+              <img
+                src={star}
+                alt=''
+                className='w-10 pb-1 transition-transform delay-1000 group-hover:animate-bounce'
+              />
+            </NavLink>
           </li>
         </ul>
       </nav>
