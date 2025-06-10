@@ -15,11 +15,38 @@
   animation: shake 1.0s ease-in-out infinite;
 }
 
+.notebook-lines-r {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 26px,
+    #cad5e2 27px
+  );
+  background-repeat: no-repeat;
+  background-size: 95% 100%;   /* Linhas ocupam só 90% da largura */
+  background-position: left center;
+}
+
+.notebook-lines-l {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 26px,
+    #cad5e2 27px
+  );
+  background-repeat: no-repeat;
+  background-size: 95% 100%;   /* Linhas ocupam só 90% da largura */
+  background-position: right center;
+}
+
 @theme {
   --animate-shake: shake 0.5s ease-in-out infinite,
   --font-patrickHand: 'Patrick Hand', sans-serif;
   --font-allura: 'Allura', sans-serif;
+  --inset-shadow-bookPageCenter: inset 0 0 20px 0 rgba(0, 0, 0, 0.25);
+  --shadow-bookPage:  0px 1px 3px rgba(0, 0, 0, 0.12);
 
   --color-whiteKuromin:	#eeeeee
-
 }
+
+

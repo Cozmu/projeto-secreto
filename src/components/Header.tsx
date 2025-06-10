@@ -1,6 +1,6 @@
 import { type ReactElement } from 'react';
 import NavigateBar from './NavigateBar';
-import arrow from '../../imgs/down-arrow.png';
+import arrow from '../../imgs/iconsHeader/down-arrow.png';
 
 function Header(): ReactElement {
   return (

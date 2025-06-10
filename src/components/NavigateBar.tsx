@@ -1,9 +1,9 @@
 import { useState, type ReactElement } from 'react';
 import { NavLink } from 'react-router-dom';
-import kuromiFace from '../../imgs/kuomiFace2.png';
-import ampulheta from '../../imgs/ampulheta.png';
-import camera from '../../imgs/camera.png';
-import star from '../../imgs/star.png';
+import kuromiFace from '../../imgs/iconsHeader/kuomiFace2.png';
+import ampulheta from '../../imgs/iconsHeader/ampulheta.png';
+import camera from '../../imgs/iconsHeader/camera.png';
+import star from '../../imgs/iconsHeader/star.png';
 
 function NavigateBar(): ReactElement {
   const [isDrop, setIsDrop] = useState<boolean>(false);
