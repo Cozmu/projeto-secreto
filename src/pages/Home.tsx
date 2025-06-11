@@ -7,6 +7,7 @@ import florUm from '../../imgs/icons/flower2.png';
 import florDois from '../../imgs/icons/flower3.png';
 import canto from '../../imgs/icons/canto2.png';
 import coracaoUm from '../../imgs/icons/heart1.png';
+import kuromiAPX from '../../imgs/icons/KuromiApaix.png';
 
 function Home(): ReactElement {
   return (
@@ -63,6 +64,9 @@ function Home(): ReactElement {
           </div>
           <div className='absolute top-20 right-92'>
             <img src={coracaoUm} alt='' className='w-10 rotate-25' />
+          </div>
+          <div className='absolute right-10 bottom-20'>
+            <img src={kuromiAPX} alt='' className='w-52' />
           </div>
         </div>
       </section>
