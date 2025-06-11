@@ -1,6 +1,6 @@
 import { type ReactElement } from 'react';
 import NavigateBar from './NavigateBar';
-import arrow from '../../imgs/iconsHeader/down-arrow.png';
+import arrow from '../../imgs/icons/down-arrow.png';
 
 function Header(): ReactElement {
   return (
@@ -13,7 +13,8 @@ function Header(): ReactElement {
         </div>
       </div>
       <h1 className='mr-32 text-4xl font-semibold'>
-        𓂃˖˳·˖ ִֶָ ⋆🪻͙⋆ ִֶָ˖·˳˖𓂃 ִֶָPara meu amor lindo𓂃˖˳·˖ ִֶָ ⋆🪻͙⋆ ִֶָ˖·˳˖𓂃 ִֶָ
+        𓂃˖˳·˖ ִֶָ ⋆🪻͙⋆ ִֶָ˖·˳˖𓂃 ִֶָPara meu amor lindo𓂃˖˳·˖ ִֶָ ⋆🪻͙⋆ ִֶָ˖·˳˖𓂃
+        ִֶָ
       </h1>
       <div />
     </header>

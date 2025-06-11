@@ -1,9 +1,9 @@
 import { useState, type ReactElement } from 'react';
 import { NavLink } from 'react-router-dom';
-import kuromiFace from '../../imgs/iconsHeader/kuomiFace2.png';
-import ampulheta from '../../imgs/iconsHeader/ampulheta.png';
-import camera from '../../imgs/iconsHeader/camera.png';
-import star from '../../imgs/iconsHeader/star.png';
+import kuromiFace from '../../imgs/icons/kuomiFace2.png';
+import ampulheta from '../../imgs/icons/ampulheta.png';
+import camera from '../../imgs/icons/camera.png';
+import star from '../../imgs/icons/star.png';
 
 function NavigateBar(): ReactElement {
   const [isDrop, setIsDrop] = useState<boolean>(false);
@@ -28,7 +28,9 @@ function NavigateBar(): ReactElement {
       <nav className='absolute mt-4'>
         <ul
           className={`flex flex-col gap-4 text-center text-lg transition-all duration-500 ${
-            isDrop ? 'translate-y-0 opacity-100' : 'pointer-events-none -translate-y-2 opacity-0'
+            isDrop
+              ? 'translate-y-0 opacity-100'
+              : 'pointer-events-none -translate-y-2 opacity-0'
           }`}
         >
           <li className='group translate-0 cursor-pointer transition-all duration-500 ease-in hover:scale-105'>
