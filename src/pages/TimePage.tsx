@@ -1,4 +1,5 @@
 import { useEffect, useState, type ReactElement } from 'react';
+import ampulheta from '../../imgs/icons/ampulheta.png';
 
 interface TempoDecorrido {
   dias: number;
@@ -26,6 +27,16 @@ function TempoDesde(): ReactElement {
   const [tempo, setTempo] = useState<TempoDecorrido>(() =>
     calcularTempoDesde(dataInicial),
   );
+  const [rotacaoAmpulheta, setRotacaoAmpulheta] = useState<boolean>(false);
+
+  useEffect(() => {
+    const intervaloAmpulheta: number = setInterval(() => {
+      setRotacaoAmpulheta((prev: boolean) => !prev);
+    }, 5000);
+    console.log(intervaloAmpulheta, rotacaoAmpulheta);
+
+    return (): void => clearInterval(intervaloAmpulheta);
+  }, [rotacaoAmpulheta]);
 
   useEffect(() => {
     const intervalo: number = setInterval(() => {
@@ -36,19 +47,42 @@ function TempoDesde(): ReactElement {
   }, [dataInicial]);
 
   return (
-    <div className='font-pacifico flex h-screen w-full flex-col items-center justify-center'>
+    <div className='font-pacifico flex h-screen w-full flex-col items-center justify-center gap-10'>
       <section>
         <img src='' alt='' />
         <h1 className='text-3xl'>
           TODO ESSE TEMPÃO SENDO FELIZ AO SEU LADO (๑•̀ㅁ•́๑)✧
         </h1>
       </section>
-      <p>Já se passaram:</p>
-      <p>
-        {tempo.dias} dias, {tempo.horas.toString().padStart(2, '0')}:
-        {tempo.minutos.toString().padStart(2, '0')}:
-        {tempo.segundos.toString().padStart(2, '0')}
-      </p>
+      <section className='flex gap-5'>
+        <div className='flex flex-col items-center justify-center gap-1'>
+          <p className='text-9xl'>{tempo.dias}:</p>
+          <p className='mr-10'>DIAS</p>
+        </div>
+        <div className='flex flex-col items-center justify-center gap-1'>
+          <p className='text-9xl'>{tempo.horas.toString().padStart(2, '0')}:</p>
+          <p className='mr-10'>HORAS</p>
+        </div>
+        <div className='flex flex-col items-center justify-center gap-1'>
+          <p className='text-9xl'>
+            {tempo.minutos.toString().padStart(2, '0')}:
+          </p>
+          <p className='mr-10'>MINUTOS</p>
+        </div>
+        <div className='flex flex-col items-center justify-center gap-1'>
+          <p className='w-40 text-9xl'>
+            {tempo.segundos.toString().padStart(2, '0')}
+          </p>
+          <p className='mr-10'>SEGUNDOS</p>
+        </div>
+        <div className=''>
+          <img
+            src={ampulheta}
+            alt=''
+            className={`${rotacaoAmpulheta ? 'rotate-360' : 'rotate-0'} transition-transform duration-3000 ease-in-out`}
+          />
+        </div>
+      </section>
     </div>
   );
 }
