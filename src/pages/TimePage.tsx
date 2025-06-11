@@ -36,10 +36,12 @@ function TempoDesde(): ReactElement {
   }, [dataInicial]);
 
   return (
-    <div className='font-pacifico flex h-screen w-full flex-col items-center justify-center text-3xl'>
+    <div className='font-pacifico flex h-screen w-full flex-col items-center justify-center'>
       <section>
         <img src='' alt='' />
-        <h1 className=''>TODO ESSE TEMPÃO SENDO FELIZ AO SEU LADO (๑•̀ㅁ•́๑)✧</h1>
+        <h1 className='text-3xl'>
+          TODO ESSE TEMPÃO SENDO FELIZ AO SEU LADO (๑•̀ㅁ•́๑)✧
+        </h1>
       </section>
       <p>Já se passaram:</p>
       <p>
