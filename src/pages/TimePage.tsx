@@ -53,8 +53,10 @@ function TempoDesde(): ReactElement {
       <section className='absolute bottom-43 left-10 w-48'>
         <img src={flower5} alt='' />
       </section>
+      <section className='absolute top-43 left-56 w-48 rotate-180'>
+        <img src={flower5} alt='' />
+      </section>
       <section className='absolute left-25 w-64'>
-        <img src='' alt='' />
         <img src={euEelaNATAL} alt='' className='rounded-xl' />
       </section>
       <section className='relative'>
