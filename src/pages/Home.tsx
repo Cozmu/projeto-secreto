@@ -10,7 +10,7 @@ function Home(): ReactElement {
       <Header />
       <section className='flex h-screen items-center justify-center'>
         <div
-          className={`mb-20 flex h-3/4 w-3xl items-center justify-center rounded-2xl bg-gradient-to-r from-[#72421f] via-[#4e2e04] to-[#72421f] 2xl:h-3/5`}
+          className={`flex h-3/4 w-3xl items-center justify-center rounded-2xl bg-gradient-to-r from-[#72421f] via-[#4e2e04] to-[#72421f] 2xl:mt-0 2xl:mb-20 2xl:h-3/5`}
         >
           <section
             className={`notebook-lines-l bg-whiteKuromin shadow-bookPage inset-shadow-bookPageCenter relative flex h-[97%] w-[48%] items-center justify-center rounded-l-2xl border-r-[1px] border-slate-300`}
@@ -20,7 +20,7 @@ function Home(): ReactElement {
               alt=''
               className='mb-10 w-56 rounded-2xl border-10 border-transparent'
             />
-            <div className='absolute -top-7 flex flex-col justify-between gap-28'>
+            <div className='absolute -top-15 flex flex-col justify-between gap-28 2xl:-top-7'>
               <img src={borderTop} alt='' className='w-56' />
               <img src={borderBottom} alt='' className='w-56' />
             </div>
