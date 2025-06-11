@@ -43,6 +43,7 @@
   --animate-shake: shake 0.5s ease-in-out infinite,
   --font-patrickHand: 'Patrick Hand', sans-serif;
   --font-allura: 'Allura', sans-serif;
+  --font-pacifico: 'Pacifico', cursive;
   --inset-shadow-bookPageCenter: inset 0 0 20px 0 rgba(0, 0, 0, 0.25);
   --shadow-bookPage:  0px 1px 3px rgba(0, 0, 0, 0.12);
 

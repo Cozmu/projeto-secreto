@@ -34,11 +34,11 @@ function NavigateBar(): ReactElement {
           }`}
         >
           <li className='group translate-0 cursor-pointer transition-all duration-500 ease-in hover:scale-105'>
-            <NavLink className='flex' to='#'>
+            <NavLink className='flex' to='/time'>
               <p></p>Tempo com você
               <img
                 src={ampulheta}
-                alt=''
+                alt='/'
                 className='w-10 transition-transform duration-1200 ease-in-out group-hover:rotate-360'
               />
             </NavLink>
