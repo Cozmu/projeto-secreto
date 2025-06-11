@@ -1,5 +1,6 @@
 import { useEffect, useState, type ReactElement } from 'react';
 import ampulheta from '../../imgs/icons/ampulheta.png';
+import kuromiPensando from '../../imgs/icons/kuromiPensando.png';
 
 interface TempoDecorrido {
   dias: number;
@@ -33,7 +34,6 @@ function TempoDesde(): ReactElement {
     const intervaloAmpulheta: number = setInterval(() => {
       setRotacaoAmpulheta((prev: boolean) => !prev);
     }, 5000);
-    console.log(intervaloAmpulheta, rotacaoAmpulheta);
 
     return (): void => clearInterval(intervaloAmpulheta);
   }, [rotacaoAmpulheta]);
@@ -47,12 +47,17 @@ function TempoDesde(): ReactElement {
   }, [dataInicial]);
 
   return (
-    <div className='font-pacifico flex h-screen w-full flex-col items-center justify-center gap-10'>
-      <section>
-        <img src='' alt='' />
+    <div className='font-pacifico relative flex h-screen w-full flex-col items-center justify-center gap-5'>
+      <section className='relative'>
+        <div className='absolute -top-47 left-8'>
+          <img src={kuromiPensando} alt='' />
+        </div>
+        <h2 className='text-right'>❀𖤣𖥧𖡼⊱✿⊰𖡼𖥧𖤣❀</h2>
+
         <h1 className='text-3xl'>
           TODO ESSE TEMPÃO SENDO FELIZ AO SEU LADO (๑•̀ㅁ•́๑)✧
         </h1>
+        <h2>❀𖤣𖥧𖡼⊱✿⊰𖡼𖥧𖤣❀</h2>
       </section>
       <section className='flex gap-5'>
         <div className='flex flex-col items-center justify-center gap-1'>
