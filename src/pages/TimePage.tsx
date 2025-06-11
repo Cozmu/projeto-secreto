@@ -1,6 +1,8 @@
 import { useEffect, useState, type ReactElement } from 'react';
 import ampulheta from '../../imgs/icons/ampulheta.png';
 import kuromiPensando from '../../imgs/icons/kuromiPensando.png';
+import euEelaNATAL from '../../imgs/galery/euEelaNATAL.jpg';
+import flower5 from '../../imgs/icons/flower5.png';
 
 interface TempoDecorrido {
   dias: number;
@@ -48,6 +50,13 @@ function TempoDesde(): ReactElement {
 
   return (
     <div className='font-pacifico relative flex h-screen w-full flex-col items-center justify-center gap-5'>
+      <section className='absolute bottom-43 left-10 w-48'>
+        <img src={flower5} alt='' />
+      </section>
+      <section className='absolute left-25 w-64'>
+        <img src='' alt='' />
+        <img src={euEelaNATAL} alt='' className='rounded-xl' />
+      </section>
       <section className='relative'>
         <div className='absolute -top-47 left-8'>
           <img src={kuromiPensando} alt='' />
