@@ -95,7 +95,7 @@ function Home(): ReactElement {
           <img src={''} alt='' />
         </div>
         <div>
-          <p className='indent-4'>
+          <p className='indent-10'>
             É difícil começar a escrever algo com tantos sentimentos envolvidos,
             tantas palavras que podem ser ditas para transmitir esse sentimento
             que quase não cabe no meu peito. Hoje, mais um Valentine's Day com
@@ -105,7 +105,7 @@ function Home(): ReactElement {
             contar para nossos netos o quão bom é ter alguém que amamos no nosso
             lado, que nos ajuda, nos ampara, nos entende, nos faz feliz.
           </p>
-          <p className='indent-4'>
+          <p className='indent-10'>
             Certamente é essa a felicidade que faz meu coração bater mais forte
             todos os dias que acordo e lembro que posso ver seu rosto, tocar sua
             pele, sentir seu cheiro, beijar sua boca, agarrar o seu corpo e dar
