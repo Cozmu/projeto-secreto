@@ -1,4 +1,4 @@
-import { type ReactElement } from 'react';
+import { useState, type ReactElement } from 'react';
 import Header from '../components/Header';
 import principal from '../../imgs/galery/fotoDelaPrincipal.jpg';
 import borderTop from '../../imgs/icons/borderTop2.png';
@@ -9,13 +9,24 @@ import canto from '../../imgs/icons/canto2.png';
 import coracaoUm from '../../imgs/icons/heart1.png';
 import kuromiAPX from '../../imgs/icons/KuromiApaix.png';
 
+const messagens: string[] = [
+  'Você é a razão do meu sorriso.',
+  'Cada momento ao seu lado é precioso.',
+  'Te amar é a melhor parte do meu dia.',
+  'Você é meu sonho realizado.',
+  'Amo cada detalhe seu.',
+  'Você é meu tudo.',
+];
+
 function Home(): ReactElement {
+  const [isMessage] = useState<string[]>(messagens);
+
   return (
     <>
       <Header />
       <section className='flex h-screen items-center justify-center'>
         <div
-          className={`relative flex h-3/4 w-3xl items-center justify-center rounded-2xl bg-gradient-to-r from-[#72421f] via-[#4e2e04] to-[#72421f] 2xl:mt-0 2xl:mb-20 2xl:h-3/5`}
+          className={`relative flex h-3/4 w-3xl items-center justify-center rounded-2xl bg-gradient-to-r from-[#72421f] via-[#4e2e04] to-[#72421f] 2xl:mt-0 2xl:h-3/5`}
         >
           <section
             className={`notebook-lines-l bg-whiteKuromin shadow-bookPage inset-shadow-bookPageCenter relative flex h-[97%] w-[48%] items-center justify-center rounded-l-2xl border-r-[1px] border-slate-300`}
@@ -68,6 +79,43 @@ function Home(): ReactElement {
           <div className='absolute right-10 bottom-20'>
             <img src={kuromiAPX} alt='' className='w-52' />
           </div>
+        </div>
+      </section>
+      <section className='flex w-full justify-around bg-linear-to-bl from-[#8260a2] via-[#c097cf] to-[#8260a2] shadow-xl/20'>
+        {isMessage.map((msg: string) => (
+          <div key={msg} className='flex text-lg font-semibold text-nowrap'>
+            <p>⋆.˚ ☾⭒.˚</p>
+            <p>{msg}</p>
+            <p className='scale-x-[-1]'>⋆.˚ ☾⭒.˚</p>
+          </div>
+        ))}
+      </section>
+      <section className='relative mx-auto w-2/5 py-20 text-2xl font-semibold'>
+        <div>
+          <p className='indent-4'>
+            É difícil começar a escrever algo com tantos sentimentos envolvidos,
+            tantas palavras que podem ser ditas para transmitir esse sentimento
+            que quase não cabe no meu peito. Hoje, mais um Valentine's Day com
+            você, sou grato a Deus por ter me concebido essa benção que é estar
+            ao seu lado, compartilhando cada momento, criando todas essas
+            lembranças, construindo nossa história para que um dia possamos
+            contar para nossos netos o quão bom é ter alguém que amamos no nosso
+            lado, que nos ajuda, nos ampara, nos entende, nos faz feliz.
+          </p>
+          <p className='indent-4'>
+            Certamente é essa a felicidade que faz meu coração bater mais forte
+            todos os dias que acordo e lembro que posso ver seu rosto, tocar sua
+            pele, sentir seu cheiro, beijar sua boca, agarrar o seu corpo e dar
+            um abraço apertado até nossas células se fundirem, convesar horas
+            sobre qualquer besteira e rirmos juntos, não conseguiria viver sem
+            isso. E por isso te digo, nunca tive tanta certeza que amo uma
+            pessoa quanto eu amo você, e quero que esse amor dure para sempre,
+            tanto em mim quanto em vc. Um dia de cada vez, estou tentando
+            evoluir e amadurecer, para ser uma pessoa melhor e termos tudo que
+            sempre sonhamos juntinhos no futuro. Eu, você e nossos pequenos
+            ପ(๑•ᴗ•๑)ଓ ♡. Te amo infinitamente Larissa, hoje minha namorada..
+            amanhã minha esposa. ❤️
+          </p>
         </div>
       </section>
     </>

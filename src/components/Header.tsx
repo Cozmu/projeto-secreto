@@ -12,7 +12,7 @@ function Header(): ReactElement {
           <p className='text-base font-semibold'>Clieque aqui</p>
         </div>
       </div>
-      <h1 className='mr-32 text-4xl font-semibold'>
+      <h1 className='mr-[15rem] text-4xl font-semibold'>
         𓂃˖˳·˖ ִֶָ ⋆🪻͙⋆ ִֶָ˖·˳˖𓂃 ִֶָPara meu amor lindo𓂃˖˳·˖ ִֶָ ⋆🪻͙⋆ ִֶָ˖·˳˖𓂃
         ִֶָ
       </h1>
