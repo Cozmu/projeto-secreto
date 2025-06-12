@@ -1,7 +1,6 @@
 import { useState, type ReactElement } from 'react';
 import Header from '../components/Header';
 import principal from '../../imgs/galery/fotoDelaPrincipal.jpg';
-// import euEelaMxc from '../../imgs/galery/euEelaMxc.jpg';
 import borderTop from '../../imgs/icons/borderTop2.png';
 import borderBottom from '../../imgs/icons/borderBottom.png';
 import florUm from '../../imgs/icons/flower2.png';
@@ -86,9 +85,6 @@ function Home(): ReactElement {
           <div className='absolute right-10 bottom-20'>
             <img src={kuromiAPX} alt='' className='w-52' />
           </div>
-          {/* <div className='absolute top-8 right-10'>
-            <img src={euEelaMxc} alt='' className='w-68 rounded-xl' />
-          </div> */}
         </div>
       </section>
       <section className='flex w-full justify-around bg-linear-to-bl from-[#8260a2] via-[#c097cf] to-[#8260a2] shadow-xl/20'>

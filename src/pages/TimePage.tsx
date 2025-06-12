@@ -7,6 +7,7 @@ import kuromiNaJanela from '../../imgs/icons/kuromiNaJanela.png';
 import arrow2 from '../../imgs/icons/arrow2.png';
 import heart2 from '../../imgs/icons/heart2.png';
 import { NavLink } from 'react-router-dom';
+import kuromiComFlor from '../../imgs/icons/kuromiComFlor.png';
 
 interface TempoDecorrido {
   dias: number;
@@ -66,6 +67,10 @@ function TempoDesde(): ReactElement {
       <section className='absolute left-25 w-64'>
         <img src={euEelaNATAL} alt='' className='rounded-xl' />
       </section>
+      <section className='absolute bottom-15 left-100 w-64 rotate-6'>
+        <img src={kuromiComFlor} alt='' className='' />
+      </section>
+
       <section className='relative'>
         <div className='absolute -top-47 left-8'>
           <img src={kuromiPensando} alt='' />
