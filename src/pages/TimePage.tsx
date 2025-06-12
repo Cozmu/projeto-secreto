@@ -3,6 +3,10 @@ import ampulheta from '../../imgs/icons/ampulheta.png';
 import kuromiPensando from '../../imgs/icons/kuromiPensando.png';
 import euEelaNATAL from '../../imgs/galery/euEelaNATAL.jpg';
 import flower5 from '../../imgs/icons/flower5.png';
+import kuromiNaJanela from '../../imgs/icons/kuromiNaJanela.png';
+import arrow2 from '../../imgs/icons/arrow2.png';
+import heart2 from '../../imgs/icons/heart2.png';
+import { NavLink } from 'react-router-dom';
 
 interface TempoDecorrido {
   dias: number;
@@ -56,6 +60,9 @@ function TempoDesde(): ReactElement {
       <section className='absolute top-43 left-56 w-48 rotate-180'>
         <img src={flower5} alt='' />
       </section>
+      <section className='absolute top-49 left-13 w-20'>
+        <p className='font- text-2xl'>-`♡´-</p>
+      </section>
       <section className='absolute left-25 w-64'>
         <img src={euEelaNATAL} alt='' className='rounded-xl' />
       </section>
@@ -98,6 +105,18 @@ function TempoDesde(): ReactElement {
             className={`${rotacaoAmpulheta ? 'rotate-360' : 'rotate-0'} transition-transform duration-3000 ease-in-out`}
           />
         </div>
+      </section>
+      <section className='absolute top-20 right-20 w-72'>
+        <img src={heart2} alt='' />
+      </section>
+      <section className='absolute right-20 bottom-20 w-72 scale-x-[-1]'>
+        <img src={kuromiNaJanela} alt='' />
+      </section>
+      <section className='absolute bottom-30 flex flex-col items-center justify-center gap-2 text-2xl duration-200 ease-in-out hover:scale-110'>
+        <NavLink to='/'>
+          <img src={arrow2} alt='' className='w-20 cursor-pointer' />
+        </NavLink>
+        <p>Voltar</p>
       </section>
     </div>
   );
