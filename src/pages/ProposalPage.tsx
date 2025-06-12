@@ -36,6 +36,29 @@ function ProposalPage(): ReactElement {
     setMessagemAtual(messagemAtual + 1);
   };
 
+  // const mudandoEscala: () => string = () => {
+  //   if (messagemAtual === 0) {
+  //     return 'scale-100';
+  //   } else if (messagemAtual === 1) {
+  //     console.log('ebtriy');
+  //     return 'scale-200';
+  //   }
+  //   console.log(messagemAtual * 200);
+  //   return `scale-${messagemAtual * 200}`;
+  // };
+
+  // const mudandoMargem: () => string = () => {
+  //   if (messagemAtual === 0) {
+  //     return 'ml-5';
+  //   } else if (messagemAtual === 1) {
+  //     console.log('ebtriy');
+
+  //     return 'ml-20';
+  //   }
+  //   console.log(messagemAtual * 100);
+  //   return `ml-${messagemAtual * 100}`;
+  // };
+
   return (
     <div className='font-pacifico flex h-screen w-full flex-col items-center justify-center gap-14'>
       <img
@@ -44,19 +67,25 @@ function ProposalPage(): ReactElement {
         className='rounded-lg'
       />
       <h1 className='text-4xl'>
-        Quer passar mais esse dia dos namorados comigooo?
+        {`Quer passar mais esse dia dos namorados comigo??? ${clicouSimOuNao ? '(*ᴗ͈ˬᴗ͈)ꕤ*.ﾟ' : '.·°՞(っ-ᯅ-ς)՞°·.'}`}
       </h1>
-      <form className='flex flex-wrap gap-10'>
+      <form className='w-5/6 text-center'>
         <button
           type='button'
-          className='h-12 w-24 cursor-pointer rounded-md bg-linear-to-bl from-[#8260a2] via-[#c097cf] to-[#8260a2] p-2 shadow-2xl duration-500 ease-in-out hover:animate-pulse'
+          style={{
+            transform: `scale(${1 + messagemAtual * 1.8})`,
+          }}
+          className={`h-12 w-24 cursor-pointer rounded-md bg-linear-to-bl from-[#8260a2] via-[#c097cf] to-[#8260a2] p-2 shadow-2xl`}
           onClick={() => ondeEuCliquei(true)}
         >
           <span>Sim</span>
         </button>
         <button
+          style={{
+            marginLeft: `${messagemAtual === 0 ? 20 : messagemAtual * 120}px`, // 20px a mais por clique
+          }}
           type='button'
-          className={`h-12 ${clicouSimOuNao ? 'w-24' : ''} cursor-pointer rounded-md bg-linear-to-bl from-[#8260a2] via-[#c097cf] to-[#8260a2] p-2 text-center shadow-2xl duration-500 ease-in-out hover:animate-pulse`}
+          className={`h-12 ${clicouSimOuNao ? 'w-24' : ''} w-36 cursor-pointer rounded-md bg-linear-to-bl from-[#8260a2] via-[#c097cf] to-[#8260a2] p-2 text-center shadow-2xl`}
           onClick={() => ondeEuCliquei(false)}
         >
           <span>
