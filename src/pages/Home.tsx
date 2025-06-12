@@ -92,6 +92,9 @@ function Home(): ReactElement {
       </section>
       <section className='relative mx-auto w-2/5 py-20 text-2xl font-semibold'>
         <div>
+          <img src={''} alt='' />
+        </div>
+        <div>
           <p className='indent-4'>
             É difícil começar a escrever algo com tantos sentimentos envolvidos,
             tantas palavras que podem ser ditas para transmitir esse sentimento

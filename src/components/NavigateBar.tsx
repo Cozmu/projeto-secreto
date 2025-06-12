@@ -54,7 +54,7 @@ function NavigateBar(): ReactElement {
             </NavLink>
           </li>
           <li className='group translate-0 transition-all duration-500 ease-in hover:scale-105'>
-            <NavLink className='flex items-center' to='#'>
+            <NavLink className='flex items-center' to='/proposal'>
               <p>Proposta imperdivel</p>
               <img
                 src={star}
