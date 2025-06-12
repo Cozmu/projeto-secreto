@@ -1,6 +1,7 @@
 import { useState, type ReactElement } from 'react';
 import Header from '../components/Header';
 import principal from '../../imgs/galery/fotoDelaPrincipal.jpg';
+// import euEelaMxc from '../../imgs/galery/euEelaMxc.jpg';
 import borderTop from '../../imgs/icons/borderTop2.png';
 import borderBottom from '../../imgs/icons/borderBottom.png';
 import florUm from '../../imgs/icons/flower2.png';
@@ -8,6 +9,12 @@ import florDois from '../../imgs/icons/flower3.png';
 import canto from '../../imgs/icons/canto2.png';
 import coracaoUm from '../../imgs/icons/heart1.png';
 import kuromiAPX from '../../imgs/icons/KuromiApaix.png';
+import flower9 from '../../imgs/icons/flower9.png';
+import letterLove5 from '../../imgs/icons/letterLove5.png';
+import heart6 from '../../imgs/icons/heart6.png';
+import kuromiEscrev from '../../imgs/icons/kuromiEscrev.png';
+import letterLove4 from '../../imgs/icons/letterLove4.png';
+import flower10 from '../../imgs/icons/flower10.png';
 
 const messagens: string[] = [
   'Você é a razão do meu sorriso.',
@@ -79,6 +86,9 @@ function Home(): ReactElement {
           <div className='absolute right-10 bottom-20'>
             <img src={kuromiAPX} alt='' className='w-52' />
           </div>
+          {/* <div className='absolute top-8 right-10'>
+            <img src={euEelaMxc} alt='' className='w-68 rounded-xl' />
+          </div> */}
         </div>
       </section>
       <section className='flex w-full justify-around bg-linear-to-bl from-[#8260a2] via-[#c097cf] to-[#8260a2] shadow-xl/20'>
@@ -90,9 +100,39 @@ function Home(): ReactElement {
           </div>
         ))}
       </section>
-      <section className='relative mx-auto w-2/5 py-20 text-2xl font-semibold'>
-        <div>
-          <img src={''} alt='' />
+      <section className='relative mx-auto w-2/5 py-30 text-2xl font-semibold'>
+        <div className='absolute bottom-17 -left-18 w-20 rotate-270'>
+          <img src={flower9} alt='' />
+        </div>
+        <div className='absolute -right-10 bottom-18 w-20 rotate-180'>
+          <img src={flower9} alt='' />
+        </div>
+        <div className='absolute top-20 -left-18 w-20'>
+          <img src={flower9} alt='' />
+        </div>
+        <div className='absolute top-20 -right-10 w-20 rotate-90'>
+          <img src={flower9} alt='' />
+        </div>
+        <div className='absolute -right-28 bottom-70 w-40 rotate-90'>
+          <img src={borderTop} alt='' />
+        </div>
+        <div className='absolute bottom-70 -left-36.5 w-40 rotate-270'>
+          <img src={borderTop} alt='' />
+        </div>
+        <div className='absolute -left-100 w-40 -rotate-15'>
+          <img src={letterLove5} alt='' />
+        </div>
+        <div className='absolute bottom-38 -left-45 w-15 -rotate-10'>
+          <img src={heart6} alt='' />
+        </div>
+        <div className='absolute top-5 -right-100 w-60'>
+          <img src={kuromiEscrev} alt='' />
+        </div>
+        <div className='absolute -right-120 bottom-28 w-60 rotate-45'>
+          <img src={letterLove4} alt='' className='' />
+        </div>
+        <div className='absolute bottom-28 -left-110 w-30'>
+          <img src={flower10} alt='' className='' />
         </div>
         <div>
           <p className='indent-10'>
