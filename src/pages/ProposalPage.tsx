@@ -83,6 +83,7 @@ function ProposalPage(): ReactElement {
         <button
           style={{
             marginLeft: `${messagemAtual === 0 ? 20 : messagemAtual * 120}px`, // 20px a mais por clique
+            height: `${messagemAtual === 0 ? 48 : 60}px`, // 20px a mais por clique
           }}
           type='button'
           className={`h-12 ${clicouSimOuNao ? 'w-24' : ''} w-36 cursor-pointer rounded-md bg-linear-to-bl from-[#8260a2] via-[#c097cf] to-[#8260a2] p-2 text-center shadow-2xl`}
