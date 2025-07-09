@@ -14,6 +14,39 @@ import heart6 from '../../imgs/icons/heart6.png';
 import kuromiEscrev from '../../imgs/icons/kuromiEscrev.png';
 import letterLove4 from '../../imgs/icons/letterLove4.png';
 import flower10 from '../../imgs/icons/flower10.png';
+// import star1 from '../../imgs/icons/star1.png';
+// import star2 from '../../imgs/icons/star2.png';
+// import star3 from '../../imgs/icons/star3.png';
+// import star4 from '../../imgs/icons/star4.png';
+// import star5 from '../../imgs/icons/star5.png';
+// import heart2 from '../../imgs/icons/heart2.png';
+// import heart4 from '../../imgs/icons/heart4.png';
+// import heart5 from '../../imgs/icons/heart5.png';
+// import heart7 from '../../imgs/icons/heart7.png';
+{
+  /*
+  <img src={heart6} alt='' className='absolute top-8 left-12 w-14 rotate-12' />
+  <img src={star1} alt='' className='absolute top-20 right-20 w-10 rotate-6' />
+  <img src={heart2} alt='' className='absolute bottom-14 left-28 w-12 -rotate-12' />
+  <img src={star3} alt='' className='absolute bottom-20 right-44 w-8 rotate-45' />
+  <img src={heart4} alt='' className='absolute top-36 left-52 w-16 rotate-3' />
+  <img src={star5} alt='' className='absolute bottom-32 left-10 w-6 -rotate-6' />
+  <img src={heart5} alt='' className='absolute top-14 right-8 w-10 rotate-12' />
+  <img src={star2} alt='' className='absolute bottom-10 right-10 w-9 rotate-9' />
+
+  <img src={heart7} alt='' className='absolute top-44 right-60 w-14 -rotate-9' />
+  <img src={star4} alt='' className='absolute top-10 left-1/2 w-12 -rotate-3' />
+  <img src={heart2} alt='' className='absolute top-[48%] left-[22%] w-10 rotate-6' />
+  <img src={star3} alt='' className='absolute top-[54%] right-[25%] w-9 -rotate-6' />
+  <img src={heart6} alt='' className='absolute top-[60%] left-[30%] w-12 rotate-3' />
+  <img src={star1} alt='' className='absolute top-[40%] right-[35%] w-8 rotate-12' />
+  <img src={heart5} alt='' className='absolute bottom-[40%] left-[36%] w-11 -rotate-6' />
+  <img src={star2} alt='' className='absolute bottom-[35%] right-[30%] w-7 rotate-9' />
+  <img src={heart4} alt='' className='absolute top-[46%] right-[40%] w-10 rotate-1' />
+  <img src={star5} alt='' className='absolute bottom-[44%] left-[28%] w-6 rotate-4' />
+  classe relative linha 66
+*/
+}
 
 const messagens: string[] = [
   'Você é a razão do meu sorriso.',
